@@ -1,3 +1,7 @@
+:root {
+  --ddo-label-color: 138, 40, 42;
+  --ddo-label-color: 67, 106, 119;
+}
 #sproget-react-search .react-active-word-presentation .word-section .word-html + .word-html {
   margin-top: 2rem;
 }
@@ -37,6 +41,9 @@
 #sproget-react-search .react-active-word-presentation .word-section .ddos .def .def .dtrn {
   max-width: none;
 }
+#sproget-react-search .react-active-word-presentation .word-section .ddos .head {
+  margin-right: 0.5rem;
+}
 #sproget-react-search .react-active-word-presentation .word-section .ddos .head a {
   margin: 0;
 }
@@ -70,33 +77,58 @@
 #sproget-react-search .react-active-word-presentation .word-section .ddos .audio {
   margin-left: 0.2rem;
 }
+#sproget-react-search .react-active-word-presentation .word-section .ddos .def {
+  flex-basis: 100%;
+}
 #sproget-react-search .react-active-word-presentation .word-section .ddos .def .info-box {
   margin-top: 0;
   margin-left: 0;
   padding-left: 0;
 }
 #sproget-react-search .react-active-word-presentation .word-section .ddos .def > .def .info-box {
-  margin-top: 0;
+  margin-top: 0.25rem;
   margin-left: 1rem;
   padding-left: 0;
 }
 #sproget-react-search .react-active-word-presentation .word-section .ddos .def > .def > .def .info-box {
+  
   margin-left: 2rem;
 }
+
 #sproget-react-search .react-active-word-presentation .word-section .ddos .info-header {
-  border: 0.125rem solid var(--base-border-color);
-  color: #aaa;
+  border: 0.125rem solid rgb(var(--ddo-label-color), 0.2);
+  background-color: rgba(var(--ddo-label-color), 0.1);
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.125rem;
+  display: inline-block;
+  color: rgba(var(--ddo-label-color), 0.5);
+/*  color: #aaa;
   display: inline;
   font-size: 0.7rem;
   font-weight: 700;
   margin-right: 0.5rem;
   padding: 0 0.2rem;
-  text-transform: uppercase;
+  text-transform: uppercase;*/
 }
 #sproget-react-search .react-active-word-presentation .word-section .ddos .phon {
   font-family: Arial, Helvetica, sans-serif;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+#sproget-react-search .react-active-word-presentation .word-section .ddos .forms .k {
+  color: inherit;
+}
+#sproget-react-search .react-active-word-presentation .word-section .ddos .forms::before {
+  content: "VARIANS";
+  border: 0.125rem solid rgb(var(--ddo-label-color), 0.2);
+  background-color: rgb(var(--ddo-label-color), 0.1);
+  padding: 0.125rem 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.125rem;
+  display: inline-block;  
+  color: rgb(var(--ddo-label-color), 0.5);
+  font-size: .7rem;
+  font-weight: 700;}
 #sproget-react-search .react-active-word-presentation .word-section .ddos span.antonym .k, #sproget-react-search .react-active-word-presentation .word-section .ddos span.related .k, #sproget-react-search .react-active-word-presentation .word-section .ddos span.synonym .k {
   color: var(--color-text-gray);
 }
@@ -142,17 +174,5 @@
   text-decoration: underline;
 }
 
-/* LEGESTUE */
-/*
-.ar > span.def > .def {
-    border-left: 10px solid $ddoColor;
-    padding-left: 0.4rem!important;
-}
-
-.ar > .def > .idiom {
-    border-left: 10px solid $ddoColorLight;
-    padding-left: 0.4rem!important;
-}
-*/
 
 /*# sourceMappingURL=sproget_ddo.css.map */
