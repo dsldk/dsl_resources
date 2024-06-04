@@ -1,37 +1,46 @@
+:root {
+    --ddo-label-color: 138, 40, 42;
+    --ddo-label-color: 67, 106, 119;
+}
+
 $mainsense_margin: 1rem;
 $subsense_margin: 2rem;
 
-#sproget-react-search .react-active-word-presentation .word-section .word-html + .word-html {
+#sproget-react-search .react-active-word-presentation .word-section .word-html+.word-html {
     margin-top: 2rem; // TODO: margin-top for første = 1rem
 }
 
 #sproget-react-search .react-active-word-presentation .word-section .ddos.ar {
     gap: 0em;
 }
+
 #sproget-react-search .react-active-word-presentation .word-section {
-    .ar > .def > .def:before, .def > .idiom:before {
+
+    .ar>.def>.def:before,
+    .def>.idiom:before {
         display: block;
         color: #666;
         margin-bottom: 0.4rem;
         font-family: var(--font-family-heading);
     }
-    .ar > .def > .def + .def :before {
+
+    .ar>.def>.def+.def :before {
         display: inherit;
         color: inherit;
         margin-bottom: inherit;
     }
 
-    .ar > .def > .def:before {
+    .ar>.def>.def:before {
         content: "BETYDNING";
         margin-top: 0.4rem;
     }
 
-    .ar > .def > .def + .def:before {
+    .ar>.def>.def+.def:before {
         content: none;
         margin-top: inherit;
     }
 
-    .def > .idiom:before {
+    .def>.idiom:before {
         content: "FASTE UDTRYK";
         margin-top: 0.8rem;
     }
@@ -39,13 +48,19 @@ $subsense_margin: 2rem;
 
 #sproget-react-search .react-active-word-presentation .word-section .ddos {
 
-    .def, .idiom>.idiom>.def>.def, .def > .idiom  {
+    .def,
+    .idiom>.idiom>.def>.def,
+    .def>.idiom {
         gap: 0rem; // Overwriting peytz
         padding-left: 0; // Overwriting peytz
     }
 
     .def .def .dtrn {
         max-width: none; // Overwriting peytz
+    }
+
+    .head {
+        margin-right: 0.5rem;
     }
 
     .head a {
@@ -61,7 +76,7 @@ $subsense_margin: 2rem;
         margin-top: 0.4rem;
     }
 
-    .idiom > .def {
+    .idiom>.def {
         margin-top: 0;
     }
 
@@ -90,6 +105,10 @@ $subsense_margin: 2rem;
         margin-left: 0.2rem;
     }
 
+    .def {
+        flex-basis: 100%;
+    }
+
     .def .info-box {
         margin-top: 0;
         margin-left: 0;
@@ -107,14 +126,19 @@ $subsense_margin: 2rem;
     }
 
     .info-header {
-        border: 0.125rem solid var(--base-border-color);
-        color: #aaa;
+        border: 0.125rem solid rgb(var(--ddo-label-color), 0.2);
+        background-color: rgba(var(--ddo-label-color), 0.1);
+        padding: 0.125rem 0.5rem;
+        border-radius: 0.125rem;
+        display: inline-block;
+        color: rgba(var(--ddo-label-color), 0.5);
+        /* color: #aaa;
         display: inline;
         font-size: .7rem;
         font-weight: 700;
         margin-right: 0.5rem;
         padding: 0 0.2rem;
-        text-transform: uppercase;
+        text-transform: uppercase;*/
     }
 
     .phon {
@@ -122,7 +146,27 @@ $subsense_margin: 2rem;
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
-    span.antonym .k, span.related .k, span.synonym .k {
+    .forms .k {
+        color: inherit;
+    }
+
+    .forms::before {
+        content: "VARIANS";
+        border: 0.125rem solid rgb(var(--ddo-label-color), 0.2);
+        background-color: rgb(var(--ddo-label-color), 0.1);
+        padding: 0.125rem 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-right: 0.5rem;
+        border-radius: 0.125rem;
+        display: inline-block;
+        color: rgb(var(--ddo-label-color), 0.5);
+        font-size: .7rem;
+        font-weight: 700;
+    }
+
+    span.antonym .k,
+    span.related .k,
+    span.synonym .k {
         color: var(--color-text-gray);
     }
 
@@ -161,20 +205,22 @@ $subsense_margin: 2rem;
         font-style: italic;
     }
 
-    .idiom>.idiom + .idiom {
+    .idiom>.idiom+.idiom {
         display: block;
         margin-top: 0.4rem;
     }
 
     .idiom .idiom a .k {
-        font-weight: bold!important;
+        font-weight: bold !important;
     }
 
-    .onyms a, .idiom > a {
+    .onyms a,
+    .idiom>a {
         text-decoration: none;
     }
 
-    .onyms a:hover, .idiom > a:hover {
+    .onyms a:hover,
+    .idiom>a:hover {
         text-decoration: underline;
     }
 }
