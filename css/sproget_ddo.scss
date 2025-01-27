@@ -6,15 +6,18 @@
 $mainsense_margin: 1rem;
 $subsense_margin: 2rem;
 
-#sproget-react-search .react-active-word-presentation .word-section .word-html+.word-html {
+#sproget-react-search .react-active-word-presentation .word-section .word-html+.word-html,
+#sproget-react-elements .react-active-word-presentation .word-section .word-html+.word-html {
     margin-top: 2rem; // TODO: margin-top for første = 1rem
 }
 
-#sproget-react-search .react-active-word-presentation .word-section .ddos.ar {
+#sproget-react-search .react-active-word-presentation .word-section .ddos.ar,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos.ar {
     gap: 0em;
 }
 
-#sproget-react-search .react-active-word-presentation .word-section {
+#sproget-react-search .react-active-word-presentation .word-section,
+#sproget-react-elements .react-active-word-presentation .word-section {
 
     .ar>.def>.def:before,
     .def>.idiom:before {
@@ -46,7 +49,8 @@ $subsense_margin: 2rem;
     }
 }
 
-#sproget-react-search .react-active-word-presentation .word-section .ddos {
+#sproget-react-search .react-active-word-presentation .word-section .ddos,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos {
 
     .def,
     .idiom>.idiom>.def>.def,
