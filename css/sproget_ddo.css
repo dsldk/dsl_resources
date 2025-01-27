@@ -2,122 +2,154 @@
   --ddo-label-color: 138, 40, 42;
   --ddo-label-color: 67, 106, 119;
 }
-#sproget-react-search .react-active-word-presentation .word-section .word-html + .word-html {
+
+#sproget-react-search .react-active-word-presentation .word-section .word-html + .word-html,
+#sproget-react-elements .react-active-word-presentation .word-section .word-html + .word-html {
   margin-top: 2rem;
 }
 
-#sproget-react-search .react-active-word-presentation .word-section .ddos.ar {
+#sproget-react-search .react-active-word-presentation .word-section .ddos.ar,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos.ar {
   gap: 0em;
 }
 
-#sproget-react-search .react-active-word-presentation .word-section .ar > .def > .def:before, #sproget-react-search .react-active-word-presentation .word-section .def > .idiom:before {
+#sproget-react-search .react-active-word-presentation .word-section .ar > .def > .def:before,
+#sproget-react-search .react-active-word-presentation .word-section .def > .idiom:before,
+#sproget-react-elements .react-active-word-presentation .word-section .ar > .def > .def:before,
+#sproget-react-elements .react-active-word-presentation .word-section .def > .idiom:before {
   display: block;
   color: #666;
   margin-bottom: 0.4rem;
   font-family: var(--font-family-heading);
 }
-#sproget-react-search .react-active-word-presentation .word-section .ar > .def > .def + .def :before {
+#sproget-react-search .react-active-word-presentation .word-section .ar > .def > .def + .def :before,
+#sproget-react-elements .react-active-word-presentation .word-section .ar > .def > .def + .def :before {
   display: inherit;
   color: inherit;
   margin-bottom: inherit;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ar > .def > .def:before {
+#sproget-react-search .react-active-word-presentation .word-section .ar > .def > .def:before,
+#sproget-react-elements .react-active-word-presentation .word-section .ar > .def > .def:before {
   content: "BETYDNING";
   margin-top: 0.4rem;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ar > .def > .def + .def:before {
+#sproget-react-search .react-active-word-presentation .word-section .ar > .def > .def + .def:before,
+#sproget-react-elements .react-active-word-presentation .word-section .ar > .def > .def + .def:before {
   content: none;
   margin-top: inherit;
 }
-#sproget-react-search .react-active-word-presentation .word-section .def > .idiom:before {
+#sproget-react-search .react-active-word-presentation .word-section .def > .idiom:before,
+#sproget-react-elements .react-active-word-presentation .word-section .def > .idiom:before {
   content: "FASTE UDTRYK";
   margin-top: 0.8rem;
 }
 
-#sproget-react-search .react-active-word-presentation .word-section .ddos .def, #sproget-react-search .react-active-word-presentation .word-section .ddos .idiom > .idiom > .def > .def, #sproget-react-search .react-active-word-presentation .word-section .ddos .def > .idiom {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .def,
+#sproget-react-search .react-active-word-presentation .word-section .ddos .idiom > .idiom > .def > .def,
+#sproget-react-search .react-active-word-presentation .word-section .ddos .def > .idiom,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .def,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .idiom > .idiom > .def > .def,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .def > .idiom {
   gap: 0rem;
   padding-left: 0;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .def .def .dtrn {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .def .def .dtrn,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .def .def .dtrn {
   max-width: none;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .head {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .head,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .head {
   margin-right: 0.5rem;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .head a {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .head a,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .head a {
   margin: 0;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .def > .def {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .def > .def,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .def > .def {
   padding-left: 0;
   gap: 0rem;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .def {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .def,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .def {
   margin-top: 0.4rem;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .idiom > .def {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .idiom > .def,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .idiom > .def {
   margin-top: 0;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .m {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .m,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .m {
   display: block;
   margin-top: 0.4rem;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .head {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .head,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .head {
   display: block;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .k .opt {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .k .opt,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .k .opt {
   vertical-align: baseline;
   position: relative;
   top: -0.4em;
   font-size: 75%;
   vertical-align: unset;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .pos {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .pos,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .pos {
   margin-right: 0.4rem;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .audio {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .audio,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .audio {
   margin-left: 0.2rem;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .def {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .def,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .def {
   flex-basis: 100%;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .def .info-box {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .def .info-box,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .def .info-box {
   margin-top: 0;
   margin-left: 0;
   padding-left: 0;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .def > .def .info-box {
-  margin-top: 0.25rem;
+#sproget-react-search .react-active-word-presentation .word-section .ddos .def > .def .info-box,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .def > .def .info-box {
+  margin-top: 0;
   margin-left: 1rem;
   padding-left: 0;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .def > .def > .def .info-box {
-  
+#sproget-react-search .react-active-word-presentation .word-section .ddos .def > .def > .def .info-box,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .def > .def > .def .info-box {
   margin-left: 2rem;
 }
-
-#sproget-react-search .react-active-word-presentation .word-section .ddos .info-header {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .info-header,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .info-header {
   border: 0.125rem solid rgb(var(--ddo-label-color), 0.2);
   background-color: rgba(var(--ddo-label-color), 0.1);
   padding: 0.125rem 0.5rem;
   border-radius: 0.125rem;
   display: inline-block;
   color: rgba(var(--ddo-label-color), 0.5);
-/*  color: #aaa;
+  /* color: #aaa;
   display: inline;
-  font-size: 0.7rem;
+  font-size: .7rem;
   font-weight: 700;
   margin-right: 0.5rem;
   padding: 0 0.2rem;
   text-transform: uppercase;*/
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .phon {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .phon,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .phon {
   font-family: Arial, Helvetica, sans-serif;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .forms .k {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .forms .k,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .forms .k {
   color: inherit;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .forms::before {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .forms::before,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .forms::before {
   content: "VARIANS";
   border: 0.125rem solid rgb(var(--ddo-label-color), 0.2);
   background-color: rgb(var(--ddo-label-color), 0.1);
@@ -125,54 +157,89 @@
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
   border-radius: 0.125rem;
-  display: inline-block;  
+  display: inline-block;
   color: rgb(var(--ddo-label-color), 0.5);
-  font-size: .7rem;
-  font-weight: 700;}
-#sproget-react-search .react-active-word-presentation .word-section .ddos span.antonym .k, #sproget-react-search .react-active-word-presentation .word-section .ddos span.related .k, #sproget-react-search .react-active-word-presentation .word-section .ddos span.synonym .k {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+#sproget-react-search .react-active-word-presentation .word-section .ddos span.antonym .k,
+#sproget-react-search .react-active-word-presentation .word-section .ddos span.related .k,
+#sproget-react-search .react-active-word-presentation .word-section .ddos span.synonym .k,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos span.antonym .k,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos span.related .k,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos span.synonym .k {
   color: var(--color-text-gray);
 }
 #sproget-react-search .react-active-word-presentation .word-section .ddos .etym .k,
-#sproget-react-search .react-active-word-presentation .word-section .ddos .etym .k a {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .etym .k a,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .etym .k,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .etym .k a {
   font-style: italic;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .def .l {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .def .l,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .def .l {
   position: absolute;
   font-style: normal;
   float: left;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .def > .def > .dtrn {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .def > .def > .dtrn,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .def > .def > .dtrn {
   display: block;
   margin-left: 1rem;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .def > .def > .def {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .def > .def > .def,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .def > .def > .def {
   margin-left: 1rem;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .def > .def > .def .dtrn {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .def > .def > .def .dtrn,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .def > .def > .def .dtrn {
   display: block;
   margin-left: 2rem;
 }
 #sproget-react-search .react-active-word-presentation .word-section .ddos .dtrn .co,
-#sproget-react-search .react-active-word-presentation .word-section .ddos .dtrn .k {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .dtrn .k,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .dtrn .co,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .dtrn .k {
   font-style: italic;
   padding: 0;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .style {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .style,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .style {
   font-style: italic;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .idiom > .idiom + .idiom {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .idiom > .idiom + .idiom,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .idiom > .idiom + .idiom {
   display: block;
   margin-top: 0.4rem;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .idiom .idiom a .k {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .idiom .idiom a .k,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .idiom .idiom a .k {
   font-weight: bold !important;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .onyms a, #sproget-react-search .react-active-word-presentation .word-section .ddos .idiom > a {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .onyms a,
+#sproget-react-search .react-active-word-presentation .word-section .ddos .idiom > a,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .onyms a,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .idiom > a {
   text-decoration: none;
 }
-#sproget-react-search .react-active-word-presentation .word-section .ddos .onyms a:hover, #sproget-react-search .react-active-word-presentation .word-section .ddos .idiom > a:hover {
+#sproget-react-search .react-active-word-presentation .word-section .ddos .onyms a:hover,
+#sproget-react-search .react-active-word-presentation .word-section .ddos .idiom > a:hover,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .onyms a:hover,
+#sproget-react-elements .react-active-word-presentation .word-section .ddos .idiom > a:hover {
   text-decoration: underline;
 }
 
+/* LEGESTUE */
+/*
+.ar > span.def > .def {
+    border-left: 10px solid $ddoColor;
+    padding-left: 0.4rem!important;
+}
+
+.ar > .def > .idiom {
+    border-left: 10px solid $ddoColorLight;
+    padding-left: 0.4rem!important;
+}
+*/
 
 /*# sourceMappingURL=sproget_ddo.css.map */
